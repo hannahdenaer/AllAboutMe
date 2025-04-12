@@ -9,11 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        ZStack {
+            Image("Me!")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding(.all)
+        }
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("All About Me!")
+            Text("Hannah Denaer")
         }
         .padding()
     }
